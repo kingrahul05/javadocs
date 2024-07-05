@@ -28,7 +28,7 @@
 
 ### (a) Java Data Types
 
-### (b) While Loop,Do While loop
+### (b) While Loop,Do While loop,For Loop
 
 ### (c) variables
 
