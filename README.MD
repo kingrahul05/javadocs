@@ -308,8 +308,11 @@ until the condition is false.
 
 syntax:
 while(condition)
+
 {
+
 //loop_body(statements)
+
 }
 
 <img src="image3.png">
@@ -327,8 +330,11 @@ syntax:
 do
 
 {
+
 //Loop_body
+
 }
+
 while(condition);
 
 ### (c)for loop:
@@ -341,8 +347,11 @@ Incre/Decre declared in the same line.
 syntax:
 
 for(Initialization;Condition;Incre/Decre)
+
 {
+
 //Loop_body
+
 }
 
 ### Java Variables:
