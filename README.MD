@@ -1247,29 +1247,43 @@ Facilitates modularity by hiding the implementation details.
 Example:
 
 public class Person {
+
     private String name;
+
     private int age;
 
     public Person(String name, int age) {
+
         this.name = name;
+
         this.age = age;
+
     }
 
     public String getName() {
+
         return name;
+
     }
 
     public void setName(String name) {
+
         this.name = name;
+
     }
 
     public int getAge() {
+
         return age;
+
     }
 
     public void setAge(int age) {
+
         this.age = age;
+
     }
+
 }
 
 ### 2. Abstraction
@@ -1286,25 +1300,40 @@ Helps in achieving a clear separation of concerns.
 Example:
 
 abstract class Animal {
+
     abstract void makeSound();
 
+
     public void sleep() {
+
         System.out.println("Sleeping...");
+
     }
+
 }
 
 class Dog extends Animal {
+
     @Override
+
     void makeSound() {
+
         System.out.println("Bark");
+
     }
+
 }
 
 class Cat extends Animal {
+
     @Override
+
     void makeSound() {
+
         System.out.println("Meow");
+
     }
+
 }
 
 public class Main {
@@ -1337,23 +1366,37 @@ Facilitates method overriding and polymorphism.
 Example:
 
 class Animal {
+
     void eat() {
+
         System.out.println("Eating...");
+
     }
+
 }
 
 class Dog extends Animal {
+
     void bark() {
+
         System.out.println("Barking...");
+
     }
+
 }
 
 public class Main {
+
     public static void main(String[] args) {
+
         Dog dog = new Dog();
+
         dog.eat();  // Inherited method
+
         dog.bark(); // Specific to Dog
+
     }
+
 }
 
 
@@ -1371,22 +1414,35 @@ Simplifies code by eliminating the need for multiple conditional statements.
 Example (Method Overriding):
 
 class MathUtils {
+
     int add(int a, int b) {
+
         return a + b;
     }
 
     double add(double a, double b) {
+
         return a + b;
     }
+
 }
 
 public class Main {
+
     public static void main(String[] args) {
+
         MathUtils mathUtils = new MathUtils();
-        System.out.println(mathUtils.add(5, 3));    // Outputs: 8
-        System.out.println(mathUtils.add(5.5, 3.2)); // Outputs: 8.7
+
+        System.out.println(mathUtils.add(5, 3));  
+
+        System.out.println(mathUtils.add(5.5, 3.2)); 
+
     }
+
 }
+
+// Outputs: 8
+// Outputs: 8.7
 
 
 ### 4.References
