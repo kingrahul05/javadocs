@@ -1246,45 +1246,23 @@ Facilitates modularity by hiding the implementation details.
 
 Example:
 
-public class Person {
+public class Main {
 
-private String name;
+  public static void main(String[] args) {
 
-private int age;
+    Person myObj = new Person();
 
-public Person(String name, int age) {
+    myObj.setName("John");
 
-    this.name = name;
+    System.out.println(myObj.getName());
 
-    this.age = age;
-
-}
-
-public String getName() {
-
-    return name;
+  }
 
 }
 
-public void setName(String name) {
+Output:John
 
-    this.name = name;
 
-}
-
-public int getAge() {
-
-    return age;
-
-}
-
-public void setAge(int age) {
-
-    this.age = age;
-
-}
-
-}
 ### 2. Abstraction
 
 Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It allows focusing on what the object does instead of how it does it. Abstraction can be achieved using abstract classes and interfaces.
@@ -1298,59 +1276,35 @@ Helps in achieving a clear separation of concerns.
 
 Example:
 
+// Abstract class
 abstract class Animal {
-
-    abstract void makeSound();
-
-
-    public void sleep() {
-
-        System.out.println("Sleeping...");
-
-    }
-
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
 }
 
-class Dog extends Animal {
-
-    @Override
-
-    void makeSound() {
-
-        System.out.println("Bark");
-
-    }
-
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
 }
 
-class Cat extends Animal {
-
-    @Override
-
-    void makeSound() {
-
-        System.out.println("Meow");
-
-    }
-
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
 }
 
-public class Main {
+Output:The pig says: wee wee
 
-    public static void main(String[] args) {
-
-        Animal dog = new Dog();
-
-        Animal cat = new Cat();
-
-        dog.makeSound(); // Outputs: Bark
-
-        cat.makeSound(); // Outputs: Meow
-        
-        dog.sleep(); // Outputs: Sleeping...
-    }
-}
-
+Zzz
 ### 3. Inheritance
 
 Inheritance is a mechanism where a new class, called a subclass, is derived from an existing class, called a superclass. The subclass inherits attributes and methods from the superclass, which promotes code reusability and establishes a natural hierarchy between classes.
@@ -1364,40 +1318,26 @@ Facilitates method overriding and polymorphism.
 
 Example:
 
-class Animal {
-
-    void eat() {
-
-        System.out.println("Eating...");
-
-    }
-
+class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
 }
 
-class Dog extends Animal {
-
-    void bark() {
-
-        System.out.println("Barking...");
-
-    }
-
+class Car extends Vehicle {
+  private String modelName = "Mustang";
+  public static void main(String[] args) {
+    Car myFastCar = new Car();
+    myFastCar.honk();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+  }
 }
+OutPut:
 
-public class Main {
+Tuut, tuut!
 
-    public static void main(String[] args) {
-
-        Dog dog = new Dog();
-
-        dog.eat();  // Inherited method
-
-        dog.bark(); // Specific to Dog
-
-    }
-
-}
-
+Ford Mustang
 
 ### 4. Polymorphism
 
@@ -1412,36 +1352,42 @@ Simplifies code by eliminating the need for multiple conditional statements.
 
 Example (Method Overriding):
 
-class MathUtils {
-
-    int add(int a, int b) {
-
-        return a + b;
-    }
-
-    double add(double a, double b) {
-
-        return a + b;
-    }
-
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
 }
 
-public class Main {
-
-    public static void main(String[] args) {
-
-        MathUtils mathUtils = new MathUtils();
-
-        System.out.println(mathUtils.add(5, 3));  
-
-        System.out.println(mathUtils.add(5.5, 3.2)); 
-
-    }
-
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
 }
 
-// Outputs: 8
-// Outputs: 8.7
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();
+    Animal myPig = new Pig();
+    Animal myDog = new Dog();
+        
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+
+OutPut:
+The animal makes a sound
+
+The pig says: wee wee
+
+The dog says: bow wow
 
 
 ### 4.References
