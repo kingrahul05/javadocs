@@ -1248,44 +1248,43 @@ Example:
 
 public class Person {
 
-    private String name;
+private String name;
 
-    private int age;
+private int age;
 
-    public Person(String name, int age) {
+public Person(String name, int age) {
 
-        this.name = name;
+    this.name = name;
 
-        this.age = age;
-
-    }
-
-    public String getName() {
-
-        return name;
-
-    }
-
-    public void setName(String name) {
-
-        this.name = name;
-
-    }
-
-    public int getAge() {
-
-        return age;
-
-    }
-
-    public void setAge(int age) {
-
-        this.age = age;
-
-    }
+    this.age = age;
 
 }
 
+public String getName() {
+
+    return name;
+
+}
+
+public void setName(String name) {
+
+    this.name = name;
+
+}
+
+public int getAge() {
+
+    return age;
+
+}
+
+public void setAge(int age) {
+
+    this.age = age;
+
+}
+
+}
 ### 2. Abstraction
 
 Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It allows focusing on what the object does instead of how it does it. Abstraction can be achieved using abstract classes and interfaces.
