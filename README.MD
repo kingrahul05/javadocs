@@ -249,16 +249,27 @@ byte b = 127;
 short s = 23456;
 
 int i = 567823;
+
 long ph = 9898981234L;
+
 float f = 12.34F;
+
 double d = 1234.56;
+
 System.out.println("byte value="+b);
+
 System.out.println("short value="+s);
+
 System.out.println("int value="+i);
+
 System.out.println("long value="+ph);
+
 System.out.println("float value="+f);
+
 System.out.println("double value="+d);
+
 }
+
 }
 
 
@@ -417,10 +428,15 @@ method execution.
 Ex : Demovariables.java
 
 class DemoVariables
+
 {
+
 static int a=10;
+
 int b=20;
+
 public static void main(String args[])
+
 {
 
 int c = 30;
