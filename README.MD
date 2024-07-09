@@ -1244,10 +1244,6 @@ Enhances code maintainability and flexibility.
 
 Facilitates modularity by hiding the implementation details.
 
-Example:
-
-
-
 
 ### 2. Abstraction
 
@@ -1260,9 +1256,6 @@ Reduces complexity by hiding unnecessary details.
 Enhances code readability and maintainability.
 Helps in achieving a clear separation of concerns.
 
-Example:
-
-
 ### 3. Inheritance
 
 Inheritance is a mechanism where a new class, called a subclass, is derived from an existing class, called a superclass. The subclass inherits attributes and methods from the superclass, which promotes code reusability and establishes a natural hierarchy between classes.
@@ -1274,10 +1267,6 @@ Promotes code reusability.
 Establishes a relationship between classes.
 Facilitates method overriding and polymorphism.
 
-Example:
-
-
-
 ### 4. Polymorphism
 
 Polymorphism means "many shapes" and allows one interface to be used for a general class of actions. The specific action is determined by the exact nature of the situation. Polymorphism can be achieved through method overloading (compile-time polymorphism) and method overriding (runtime polymorphism).
@@ -1288,10 +1277,6 @@ Benefits of Polymorphism:
 Enhances flexibility and maintainability of the code.
 Allows the use of a single interface for different underlying forms (data types).
 Simplifies code by eliminating the need for multiple conditional statements.
-
-Example (Method Overriding):
-
-
 
 
 ### 4.References
