@@ -1065,20 +1065,7 @@ Class can be Instantiated,but Abstract classes cannot be
 Instantiated.
 
 
-### What is the diff b/w
 
-(i)Interface
-(ii)Abstract Class
-
-Variables in Interfaces are automatically "static and final"
-but variables in Abstract Classes are User Choice.
-
-Interfaces cannot hold "Blocks and Constructors",but Abstract
-Classes can hold "Blocks and Constructors".
-
-abstract keyword is not manditory to declare abstract methods
-in Interfaces,but "abstract" keyword is manditory to declare
-abstract methods in Abstract Classes.
 
 =============================================================================
 
