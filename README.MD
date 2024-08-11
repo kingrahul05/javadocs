@@ -10,11 +10,6 @@
 
 ### 3.Object Oriented Programming features
 
-### 4. What is the different between
-
-
-
-### 1. What is the different between
 
 ### Creating Java Project using IDE Eclipse:
 
@@ -31,16 +26,14 @@
 ### (b) While Loop,Do While loop,For Loop
 
 ### (c) variables
-
-### (d) Methods(functions)
     
-### (e) Blocks
+### (d) Blocks
 
-### (f) Constructors
+### (e) Constructors
 
-### (g) Interfaces
+### (f) Interfaces
 
-### (h) AbstractClasses
+### (g) AbstractClasses
 
 
 ### 3.Object Oriented Programming features
@@ -468,149 +461,6 @@ a value=10
 b value=20
 
 c value=30
-
-
-=====================================================================================
-
-### Methods in Java:
-
-
-Methods are the actions which are performed to generate results.
-
-Based on static keyword the methods are categorized into two types:
-
-1.static methods
-
-2.NonStatic methods
-
-### 1.static methods:
-
-The methods which are declared with "static" keyword are known as
-Static methods or Class methods.
-
-These static methods will get the memory within the class while
-class loading and can be accessed with Class_name.
-
-Structure of static methods:
-
-static return_type method_name(para_list)
-{
-//method_body
-}
-
-These static methods are categorized into two types:
-
-(a)pre-defined static methods
-
-(b)User defined static methods
-
-### (a)pre-defined static methods:
-
-The static methods which are defined and available from JavaLib
-are known as Pre-defined static methods.
-
-### (b)User defined static methods:
-
-The static methods which are defined by the programmer are known as
-User defined static methods.
-
-Coding Rule of Static methods:
-
-Static methods can access static variables from the same class directly,
-but cannot access Instance variables directly.
-
-### 2.NonStatic methods:
-
-The methods which are declared without "static" keyword are known
-as NonStatic methods or Instance method or Object Methods.
-
-These Instance methods will get the memory within the object while
-Object creation process and can be accessed with Object_name.
-
-
-Structure of Instance methods:
-
-return_type method_name(para_list)
-
-{
-//method_body
-}
-
-
-These Instance methods are categorized into two types:
-
-(a)Pre-defined Instance methods
-
-(b)User defined Instance methods
-
-### (a)Pre-defined Instance methods:
-
-The instance methods which are available from JavaLib are known as
-Pre-defined Instance methods or Built-in Instance methods.
-
-### (b)User defined Instance methods:
-
-The instance methods which are defined by the programmer are known
-as User defined Instance methods.
-
-Ex : DemoMethods.java
-
-class DemoMethods1
-
-{
-
-static int x=20;
-
-int y=30;
-
-static void dis1()
-
-{
-
-System.out.println("****dis1()*****");
-
-System.out.println("x value="+x);
-
-}
-
-void dis2()
-
-{
-
-System.out.println("****dis2()****");
-
-System.out.println("x value="+x);
-
-System.out.println("y value="+y);
-
-}
-
-public static void main(String args[])
-
-{
-
-DemoMethods1.dis1();
-
-DemoMethods1 ob = new DemoMethods1();
-
-ob.dis2();
-
-}
-
-}
-
-
-o/p:
-
-****dis1()*****
-
-x value=20
-
-****dis2()****
-
-x value=20
-
-y value=30
 
 ======================================================================
 
