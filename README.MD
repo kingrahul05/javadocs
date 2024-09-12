@@ -536,8 +536,6 @@ ClassFiles:
 
 DemoBlock1.class
 
-<img src="image4.png">
-
 Note:
 
 static block in MainClass will be executed before main() method
