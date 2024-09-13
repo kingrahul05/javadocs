@@ -379,49 +379,6 @@ static - means memory in class
 
 NonStatic - means memory in Object
 
-based on "static" keyword the variables in Java are categorized into
-
-two types:
-
-(1)Static variables
-
-(2)NonStatic variables
-
-### (1)Static variables:
-
-The variables which are declared with "static"keyword are known as
-static variables or Class variables.
-
-These static variables will get the memory within the class while
-class loading and can be accessed with class_name.
-
-### (2)NonStatic variables:
-
-The variables which are declared without static keyword are known
-as NonStatic variables.
-
-These NonStatic variables are categorized into two types:
-
-(i)Instance Variables
-
-(ii)Local Variables
-
-### (i)Instance Variables
-
-The nonStatic variables which are declared outside the methods are
-known as Instance Variables or Object Variables.
-
-These Instance variables will get the memory within the Object while
-Object creation process and can be accessed with Object_name.
-
-### (ii)Local Variables:
-
-The NonStatic variables which are declared inside the methods are
-known as Local Variables or Method Variables.
-
-These Local variables can be accessed directly within the method.
-These Local variables will get the memory within the methods while.
-
 method execution.
 Ex : Demovariables.java
 
