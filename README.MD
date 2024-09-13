@@ -792,41 +792,6 @@ The value y:21
 
 
 
-
-================================================================================================
-
-### Interface in Java:
-
-Interface is a collection of variables,abstract methods and
-Concrete methods from Java8 version onwards.
-
-(Upto Java7 version Interface is collection of Variables and
-abstract methods,but cannot hold Concrete methods)
-
-#### define abstract methods?
-
-The methods which are declared without method_body are known as
-abstract methods.
-
-structure of abstract methods:
-
-return_type method_name(para_list);
-
-### return_type method_name(para_list);
-
-The methods which are declared with method_body are known as
-Concrete methods.
-
-structure of concrete methods:
-
-return_type method_name(para_list)
-
-{
-//m
-
-
-
-
 =============================================================================
 
 ### 1. Encapsulation
